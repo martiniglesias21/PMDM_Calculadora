@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultSalaryActivity"
+    android:background="@color/background"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/tituloResult"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resultados_obtenidos"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tituloResult"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="24dp">
+
+            <TextView
+                android:id="@+id/tvSalarioBruto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Salario Bruto"
+                android:textSize="32dp"
+                android:padding="24dp"/>
+
+            <TextView
+                android:id="@+id/tvSalarioNeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Salario Neto"
+                android:textSize="32dp"
+                android:padding="24dp"/>
+
+            <TextView
+                android:id="@+id/tvRetencionIRPF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text = "Retencion IRPF"
+                android:textSize="32dp"
+                android:padding="24dp"/>
+
+            <TextView
+                android:id="@+id/tvDeducciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Deducciones"
+                android:textSize="32dp"
+                android:padding="24dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reinicia_la_aplicacion_para_repetir_la_accion"
+        app:layout_constraintTop_toBottomOf="@+id/cvResult"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

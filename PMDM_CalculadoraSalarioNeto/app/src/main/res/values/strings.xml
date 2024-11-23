@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PMDM_CalculadoraSalarioNeto</string>
+    <string name="calcular_salario_neto">Calcular Salario Neto</string>
+    <string name="escriba_su_salario">Escriba su salario</string>
+    <string name="salario">Salario</string>
+    <string name="n_hijos">Nº Hijos</string>
+    <string name="estado_civil">Estado Civil</string>
+    <string name="escriba_su_estado_civil">Escriba su estado civil</string>
+    <string name="padece_alguna_discapacidad">¿Padece alguna discapacidad?</string>
+    <string name="grupo_profesional">Grupo Profesional</string>
+    <string name="edad">Edad</string>
+    <string name="escriba_su_n_de_pagas">Escriba su nº de pagas</string>
+    <string name="n_pagas">Nº Pagas</string>
+    <string name="calculadora_salario_neto">Calculadora Salario Neto</string>
+    <string name="resultados_obtenidos">Resultados Obtenidos</string>
+    <string name="reinicia_la_aplicacion_para_repetir_la_accion">Reinicia la aplicacion para repetir la accion</string>
+</resources>
